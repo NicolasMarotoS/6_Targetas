@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjetes </title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+        }
+        body{
+            background: linear-gradient(35deg, blue, pink);
+        }
+        .contenidor{
+            display: flex;
+            border: 2px solid white;
+            padding: 2em;
+            justify-content: center;
+            flex-grow: 5;
+        }
+        .grup{
+            width: 28em;
+            margin: 1em;
+            background: rgba(240, 240, 240, 0.6);
+            border-radius: 20px;
+        }
+        .cont_img{
+            height: 300px;
+            background: purple;
+            border-radius: 20px;
+        }
+        .cont_img img{
+            mix-blend-mode: lighten;
+            filter: grayscale(100%);
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 20px 20px 0 0;
+            overflow: hidden;
+        }
+        header{
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            color: purple;
+            margin: 0.5em, 1em;
+            padding: 0 0 0 2em 0;
+            border-bottom: 1px solid purple;
+        }
+        h3{
+            font-weight:600;
+            font-style: normal;
+        }
+        h4{
+            font-style: italic;
+            font-weight: 500;
+        }
+        .cont_txt{
+            margin: 1em 1em 0.5em 1em;
+            color: purple;
+            text-align: justify;
+            hyphens: auto;
+            font-size: 0.9em;
+            line-height: 1.2;
+            flex-grow: 5;
+        }
+        .peu_foto{
+            border-radius: 0 0 30px 30px;
+            background-color: purple;
+            color: white;
+            font-style: italic;
+            font-size: 1em;
+            padding: 1em 1em 1em 1em;
+            flex-grow: 5;
+        }
+        @media (max-width: 600px){
+            body{
+                font-size: 14px;
+            }
+            .contenedor{
+                flex-direction: column;
+            }
+            designer{
+                width: 30em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenidor">
+        <div class="grup">
+            <div class="cont_img">
+                <img src="img/isidro%20ferrer.jpg" alt="Isidro Ferrer">
+            </div>
+            <header>
+                <h3>Isidro Ferrer</h3>
+                <h4>3 de marzo de 1963</h4>
+            </header>
+            <div class="cont_txt">
+                <p>sidro Ferrer (Madrid, 1963) es un ilustrador y diseñador gráfico aragonés formado en arte dramático. Fue actor teatral antes de orientar su trayectoria profesional a la creación gráfica y es en esta actividad en la que, desde finales de los 80, ha destacado especialmente en el panorama nacional e internacional, llegando a cosechar un Premio Nacional de Diseño en el 2002 y un Premio Nacional de Ilustración en 2006. Entre su lista de clientes figuran Canal +, El País, Santillana y el Centro Dramático Nacional, para el que ha trabajado en la realización de los carteles de las temporadas 2006,07,08 y 09 y que han sido expuestos en diversos países.</p>
+                <p>Graduado en Arte Dramático y Escenografía, actuó para diversas compañías teatrales en los años 80. A raíz de un accidente con una larga rehabilitación, se alejó de los escenarios para descubrir su vocación en la comunicación gráfica.</p>
+            </div>
+            <div class="peu_foto">
+                <p>Obra </p>
+            </div>
+        </div>
+        <div class="grup">
+            <div class="cont_img">
+                <img src="img/paco.jpg" alt="Paco">
+            </div>
+            <header>
+                <h3>Paco </h3>
+                <h4>1954</h4>
+            </header>
+            <div class="cont_txt">
+                <p>Uno de sus últimos actos públicos fue el 24 de septiembre de 2009, cuando participó en la presentación al Museo Valenciano de la Ilustración y la Modernidad (MuVim) de la exposición Suma y sigue del diseño en la Comunidad Valenciana, de la cual era comisario. Precisamente, el director del museo, Román de Calle, expresó al morir Bascuñán que con la muerte de éste, el diseño valenciano quedaba de luto.</p>
+                <p>Uno de sus últimos actos públicos fue el 24 de septiembre de 2009, cuando participó en la presentación al Museo Valenciano de la Ilustración y la Modernidad (MuVim) de la exposición Suma y sigue del diseño en la Comunidad Valenciana, de la cual era comisario. Precisamente, el director del museo, Román de Calle, expresó al morir Bascuñán que con la muerte de éste, el diseño valenciano quedaba de luto.Dentro del diseño gráfico ha trabajado prácticamente todas sus disciplinas: diseño de comunicación, editorial, identidad corporativa, señalización y diseño multimedia.</p>
+            </div>
+            <div class="peu_foto">
+                <p>Obra</p>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
